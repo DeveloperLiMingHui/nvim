@@ -30,7 +30,8 @@ opt.cursorline = true
 opt.swapfile = false
 
 opt.clipboard = 'unnamedplus'
+g.clipboard = 'osc52'
 
 opt.path:append("**/*")
 
-
+-- let g:clipboard = 'osc52'
