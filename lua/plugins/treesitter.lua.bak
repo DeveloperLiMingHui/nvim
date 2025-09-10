@@ -1,0 +1,44 @@
+-- return {
+--   -- 主插件
+--   {
+--     "nvim-treesitter/nvim-treesitter",
+--     build = ":TSUpdate",  -- 自动更新语法解析器
+--     event = { "BufReadPost", "BufNewFile" }, -- 推荐: 打开文件时加载
+--     dependencies = {
+--       "nvim-treesitter/nvim-treesitter-textobjects", -- 依赖关系写在这里
+--     },
+--     config = function()
+--       require("nvim-treesitter.configs").setup {
+--         ensure_installed = { "lua", "python", "go", "bash", "json", "yaml", "markdown", "vim", "c", "cpp" }, -- 支持语言
+--         highlight = { enable = true },
+--         indent = { enable = true },
+--         incremental_selection = {
+--           enable = true,
+--           keymaps = {
+--             init_selection = "gnn",
+--             node_incremental = "grn",
+--             scope_incremental = "grc",
+--             node_decremental = "grm",
+--           },
+--         },
+--         -- 文本对象配置
+--         textobjects = {
+--           select = {
+--             enable = true,
+--             lookahead = true, -- 自动跳转到下一个文本对象
+--             keymaps = {
+--               ["af"] = "@function.outer",
+--               ["if"] = "@function.inner",
+--               ["ac"] = "@class.outer",
+--               ["ic"] = "@class.inner",
+--               ["ab"] = "@block.outer",
+--               ["ib"] = "@block.inner",
+--               ["aa"] = "@parameter.outer",
+--               ["ia"] = "@parameter.inner",
+--             },
+--           }
+--         }
+--       }
+--     end,
+--   },
+-- }
