@@ -38,5 +38,6 @@ return {
     vim.keymap.set("n", "<leader>fj", fzf.jumps, { desc = "jumps" })
     vim.keymap.set("n", "<leader>fg", fzf.live_grep, { desc = "grep" })
     vim.keymap.set("n", "<leader>fh", fzf.help_tags, { desc = "help_tags" })
+    vim.keymap.set("n", "<leader>fk", fzf.keymaps, { desc = "keymaps" })
   end
 }
