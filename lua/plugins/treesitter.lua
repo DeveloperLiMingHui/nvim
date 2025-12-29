@@ -5,6 +5,7 @@ return {
     require('nvim-treesitter.configs').setup {
       ensure_installed = {"bash","python", "javascript", "go"},
       highlight = { enable = true },
+      branch = 'main',
       textobjects = {
         select = {
           enable = true,
